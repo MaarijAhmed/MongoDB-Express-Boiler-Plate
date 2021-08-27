@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 })
 
-app.post('/t', (req, res) => {
+app.post('/signup', (req, res) => {
   let userCreate = new authModel({
     email : req.body.email,
     password : req.body.password
